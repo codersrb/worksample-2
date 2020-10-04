@@ -1,0 +1,195 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-weight:700; }
+
+
+/*  main sidebar */
+.skin-black .main-sidebar {  background-color:#f0f0f0!important; }
+.skin-black .sidebar a { color:#666666!important; }
+.skin-black .main-header{ background-color:#333333!important; border-bottom: 3px solid #ff6900;  }
+.skin-black .main-header>.logo span { display:none; }
+.skin-black .main-header>.logo { width:105px; background-color:transparent!important;     background: url(../images/logo.png) center 50% no-repeat; border-right:0!important; margin-left:20px; height:60px;  }
+.skin-black .main-header>.navbar { background-color:transparent!important; }
+#admin-sidebar-toggle { display:none!important; }
+
+.skin-black .sidebar-menu>li.header { display:none; }
+.skin-black .sidebar-menu>li:hover>a, .skin-black .sidebar-menu>li.active>a { background-color:#fff!important; color:#005c97!important;}
+.main-header .navbar-custom-menu .logout { float:left; margin:10px 20px 0 40px; }  
+.main-header .navbar-custom-menu .logout  a { background: url(../images/logout.png) 0 50% no-repeat; display:inline-block; padding:10px 0 10px 25px;}
+.main-header .navbar-custom-menu a {color:#fff!important}
+.main-header .navbar-custom-menu .dropdown.user.user-menu .dropdown-toggle { border-left:0!important; border-right:0!important; background:transparent!important; display:inline-block; width:37px; height:45px; padding-bottom:0!important; margin-top:9px; padding-left:1px; padding-top:10px; position:relative; }
+.main-header .navbar-custom-menu .dropdown.user.user-menu .dropdown-toggle:after { position:absolute; top:16px; right:-2px; content:"\f0d7";     font:normal normal normal 14px/1 FontAwesome;}
+.main-header .navbar-custom-menu .dropdown.user.user-menu span.hidden-xs { display:none!important;}
+.skin-black .main-header>.navbar .nav .open>a:focus { background-color:transparent!important;  }
+.navbar-nav>.user-menu .user-image {  margin-right:0!important; margin-top:0!important; border-radius:100%; }
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {  margin-top:3px; padding:0!important; }
+.skin-black .main-header li.user-header { background-color:#333333!important; }
+.navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default.btn-flat { background-color:#ff6900!important; color:#fff!important; border:0!important; }
+.navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default.btn-flat:hover {background-color:#333333!important;}
+
+.content-wrapper, .right-side { background-color:#fff!important;}
+.field-contacts-contacttype { border-top:3px solid #cccccc; border-bottom:3px solid #cccccc; padding:10px 15px; display:none;}
+.field-contacts-contacttype.updated, .field-contacts-contactbillingaddresstype.updated { display:block; }
+.field-contacts-contacttype .help-block:empty { display:none; }
+.field-contacts-contacttype .control-label { font-size:18px; }
+#contacts-contacttype { display:inline-block; width:80%; vertical-align:middle; margin-left:10px;  }
+.form-container .label-text { position:relative; z-index:99; color:#00659d; padding-left:20px;  }
+.form-container label { position:relative; padding:5px 15px; cursor:pointer; font-size:18px; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; width:50%; float:left; text-align:center; } 
+#contacts-contacttype label .label-text:before { position:absolute; left:0; top:4px; color:#00659d; font: normal normal normal 16px/1 FontAwesome;  }
+#contacts-contacttype label:nth-of-type(1) .label-text:before { content:"\f007";  }
+#contacts-contacttype label:nth-of-type(2) .label-text:before { content:"\f0f7";  }
+#contacts-contacttype label.lableSelected .label-text, #contacts-contacttype label.lableSelected .label-text:before  { color:#fff; }
+.form-container input { position:absolute; opacity:0; cursor:pointer; }
+.selected { position:absolute; top:0; left:0; height:100%; width:100%; background-color:#e6e6e6; }
+.form-container input:checked ~ .selected { background-color:#00659d; }
+.selected:after { content:""; position:absolute; display:none; }
+.form-container.checkboxes input:checked ~ .selected { border:1px solid #00659d; }
+.form-container.checkboxes input:checked ~ .selected:after { display:block; }
+.form-container.checkboxes .selected:after { left:6px; top:1px; width:5px; height:10px; border:solid white; border-width:0 2px 2px 0;     -webkit-transform:rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+.contacts-create .box.box-default { border-top-color:transparent!important; box-shadow:none!important;}
+.form-container.checkboxes .selected { width:18px; height:18px; background-color:#fff; border:1px solid #b4b4b4; top:8px; }
+.form-container.checkboxes label { display:block; margin-bottom:10px; width:100%; text-align:left; font-size:16px; padding-left:25px; }
+.field-contacts-contactbillingaddresstype { overflow:hidden; margin:0 0 20px;}
+.field-contacts-contactbillingaddresstype, .field-contacts-contactbillingaddresstype .control-label { display:none; }
+
+.field-projectcompletion-projectcompletionstatus { background:#fafafa;padding:20px 0; display:none; text-align:center; }
+.field-projectcompletion-projectcompletionstatus h3 { text-transform:uppercase; margin-bottom:1.5em;  }
+.field-projectcompletion-projectcompletionstatus.updated { display:table; width:100%; }
+.progress-bar-box { display:inline-block; vertical-align:middle; margin-left:10px;}
+.progress-bar-box .status { display:inline-block; width:15px; height:60px; background:#e6e6e6; border-radius:50px; margin-right:5px;}
+.progress-percentage { padding-left:10px; color:#00659d; }
+.progress-bar-box .status:last-child { margin-right:0;}
+.progress-bar-box .status.completed { background:#00659d;  }
+.field-projectcompletion-projectcompletionstatus .input-row { display:inline-block; vertical-align:bottom; margin-right:5px; position:relative; }
+.field-projectcompletion-projectcompletionstatus .input-row label { font-style:italic; margin-bottom:10px;}
+
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+.lead-photos-thumbnail { width: 200px; }
+
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+    display: block;
+}
+
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
